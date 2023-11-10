@@ -77,11 +77,11 @@ itens.forEach((item) => {
     if (you === 5) {
       h2Pc.innerHTML = "";
       resultado.innerHTML = "";
-      h2You.innerHTML = "You won 🥲";
+      h2You.innerHTML = "Você VENCEU 🥲";
     } else if (pc === 5) {
       resultado.innerHTML = "";
       h2Pc.innerHTML = "";
-      h2You.innerHTML = "PC won 👾";
+      h2You.innerHTML = "Você PERDEU  😰";
     }
     if (pc > 5 || you > 5) {
       reset1();
