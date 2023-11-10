@@ -61,8 +61,7 @@ itens.forEach((item) => {
     choicePc();
 
     yourChoice = item.textContent;
-    console.log("You = " + yourChoice);
-    console.log("PC = " + randomOption);
+    
     if (
       (rockItem && randomOption === "scissors") ||
       (paperItem && randomOption === "paper") ||
