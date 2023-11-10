@@ -45,14 +45,14 @@ function pcWins() {
 
 function youWin() {
   you += 1;
-  h2You.innerHTML = `You: ${you}`;
+  h2You.innerHTML = `Você: ${you}`;
 }
 
 function reset1() {
   you = 0;
   pc = 0;
   resultado.innerHTML = "";
-  h2You.innerHTML = `You: 0`;
+  h2You.innerHTML = `Você: 0`;
   h2Pc.innerHTML = `PC: 0`;
 }
 let i = 0;
