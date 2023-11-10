@@ -45,14 +45,14 @@ function pcWins() {
 
 function youWin() {
   you += 1;
-  h2You.innerHTML = `You: ${you}`;
+  h2You.innerHTML = `Você: ${you}`;
 }
 
 function reset1() {
   you = 0;
   pc = 0;
   resultado.innerHTML = "";
-  h2You.innerHTML = `You: 0`;
+  h2You.innerHTML = `Você: 0`;
   h2Pc.innerHTML = `PC: 0`;
 }
 let i = 0;
@@ -61,8 +61,7 @@ itens.forEach((item) => {
     choicePc();
 
     yourChoice = item.textContent;
-    console.log("You = " + yourChoice);
-    console.log("PC = " + randomOption);
+    
     if (
       (rockItem && randomOption === "scissors") ||
       (paperItem && randomOption === "paper") ||
@@ -77,11 +76,11 @@ itens.forEach((item) => {
     if (you === 5) {
       h2Pc.innerHTML = "";
       resultado.innerHTML = "";
-      h2You.innerHTML = "You won 🥲";
+      h2You.innerHTML = "Você VENCEU 🥲";
     } else if (pc === 5) {
       resultado.innerHTML = "";
       h2Pc.innerHTML = "";
-      h2You.innerHTML = "PC won 👾";
+      h2You.innerHTML = "Você PERDEU  😰";
     }
     if (pc > 5 || you > 5) {
       reset1();
