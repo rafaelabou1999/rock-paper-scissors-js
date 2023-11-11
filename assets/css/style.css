@@ -13,8 +13,11 @@
 }
 
 body {
-  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
-  background-size: cover;
+  background-image: linear-gradient(
+    to right,
+    rgb(28, 43, 40),
+    rgb(42, 108, 130)
+  );
 }
 
 button {
