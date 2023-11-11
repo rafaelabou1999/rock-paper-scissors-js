@@ -84,7 +84,7 @@ itens.forEach((item) => {
       resultado.innerHTML = "";
       h2Pc.innerHTML = "";
       h2You.innerHTML = "Você PERDEU  😰";
-      h2You.style.paddingLeft = "35%";
+      h2You.style.paddingLeft = "35.1%";
     }
     if (pc > 5 || you > 5) {
       reset1();
