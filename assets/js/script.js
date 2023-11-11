@@ -61,7 +61,7 @@ itens.forEach((item) => {
     choicePc();
 
     yourChoice = item.textContent;
-    
+
     if (
       (rockItem && randomOption === "scissors") ||
       (paperItem && randomOption === "paper") ||
@@ -77,10 +77,12 @@ itens.forEach((item) => {
       h2Pc.innerHTML = "";
       resultado.innerHTML = "";
       h2You.innerHTML = "Você VENCEU 🥲";
+      h2You.style.paddingLeft = "35%";
     } else if (pc === 5) {
       resultado.innerHTML = "";
       h2Pc.innerHTML = "";
       h2You.innerHTML = "Você PERDEU  😰";
+      h2You.style.paddingLeft = "35%";
     }
     if (pc > 5 || you > 5) {
       reset1();
