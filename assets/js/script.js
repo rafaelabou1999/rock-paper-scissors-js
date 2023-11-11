@@ -53,9 +53,11 @@ function reset1() {
   pc = 0;
   resultado.innerHTML = "";
   h2You.innerHTML = `Você: 0`;
+  h2You.style.paddingLeft = "0%";
   h2Pc.innerHTML = `PC: 0`;
 }
 let i = 0;
+
 itens.forEach((item) => {
   item.addEventListener("click", function (idx) {
     choicePc();
